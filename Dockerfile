@@ -7,7 +7,7 @@ RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository ppa:jonathonf/vim -y
 RUN apt-get update
-RUN apt-get install wget curl vim-nox python2.7-dev zip docker.io -yq
+RUN apt-get install wget curl vim-nox python2.7-dev zip docker.io jq -yq
  
 # Install latest version of pip
 RUN curl -sL https://bootstrap.pypa.io/get-pip.py | python3 -
