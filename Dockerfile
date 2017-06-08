@@ -13,7 +13,7 @@ RUN apt-get install wget curl vim-nox python2.7-dev zip docker.io jq -yq
 RUN curl -sL https://bootstrap.pypa.io/get-pip.py | python3 -
 
 # Install AWS CLI
-RUN pip install awscli awsebcli
+RUN pip install awscli awsebcli docker-compose
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
