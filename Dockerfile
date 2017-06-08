@@ -7,11 +7,12 @@ RUN apt-get install software-properties-common apache2-utils git heirloom-mailx 
 
 RUN add-apt-repository ppa:jonathonf/vim -y
 RUN apt-get update
-RUN apt-get install wget curl vim-nox zip docker.io jq -yq
+RUN apt-get install wget curl vim-nox zip jq -yq
  
 RUN curl -sL https://bootstrap.pypa.io/get-pip.py | python3 -
 RUN pip install docker-compose
 RUN pip install awscli
+RUN pip install docker
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
