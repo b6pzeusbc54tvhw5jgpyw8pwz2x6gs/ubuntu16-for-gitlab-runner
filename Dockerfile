@@ -4,6 +4,7 @@ MAINTAINER Alfred UC b6pzeusbc54tvhw5jgpyw8pwz2x6gs@gmail.com
 # Install vim-nox, python, zip
 RUN apt-get update
 RUN apt-get install software-properties-common apache2-utils git heirloom-mailx -y
+RUN apt-get install hunspell hunspell-ko -y
 
 RUN add-apt-repository ppa:jonathonf/vim -y
 RUN apt-get update
